@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Event Handling Examples</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#jqueryButton").click(function() {
+    alert("Button clicked using jQuery's .click()!");
+  });
+
+  $("input[type='text']").focus(function() {
+    $(this).css("background-color", "orange");
+  });
+});
+</script>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  #jqueryButton {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  input[type='text'] {
+    padding: 8px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>jQuery Event Handling Examples</h1>
+
+  <button id="jqueryButton">Click Me (jQuery .click())</button>
+
+  <input type="text" placeholder="Focus on me (jQuery .focus())">
+
+</body>
+</html>

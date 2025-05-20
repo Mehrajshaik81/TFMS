@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="path/to/your-plugin.min.js"></script>
+    <script>
+        $('#myHeading').rainbowText(); // Applies the rainbow text effect to the heading
+        $(document).ready(function()
+        {
+            $("p").click(function()
+            {
+                $(this).hide();
+            });
+        $("#jqueryButton").click(function() {
+            alert("Button clicked using jQuery's .click()!");
+        });
+
+        $("input[type='text']").focus(function() {
+            $(this).css("background-color", "orange");
+            });
+        });
+    $(document).ready(function() {
+        $('#myCarousel').slick({
+            slidesToShow: 3,
+            dots: true
+         });
+    });
+    
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $(this).fade();
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p> My Name is Shaik Mehraj.Currently I am in Chennai.</p>
+    <p> I am currently an intern at Cognizant in Chennai.</p>
+    <p>I am away from home.</p>
+    <p> I am missing my  mother.</p>
+    <button class="jquerybutton"> SHAIK MEHRAJ</button>
+    <h1> CHENNAI</h1>
+    <h1> COGNIZANTs</h1>
+    <button>MEHRAJ</button>
+</body>
+</html>
